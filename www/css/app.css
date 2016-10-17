@@ -1,0 +1,8 @@
+a {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+a:hover {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}

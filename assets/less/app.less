@@ -1,0 +1,17 @@
+.transition(@transition) {
+
+  -o-transition: @transition;
+  transition: @transition;
+}
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+
+}
+
+a {
+  .transition(all 0.4s);
+  &:hover {
+    .opacity(10);
+  }
+}
